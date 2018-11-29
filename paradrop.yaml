@@ -1,0 +1,12 @@
+description: hello
+name: gradle-hello-world
+services:
+  main:
+    command: java -jar build/libs/gradle-hello-world-0.1.0.jar
+    image: gradle
+    source: .
+    type: light
+version: 1
+web:
+  port: 8080
+  service: main
